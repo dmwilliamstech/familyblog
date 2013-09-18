@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> | David Williams - Software Engineer</title>
+    <meta property="fb:admins" content="100000999724968"/>
+    <meta property="og:title" content="David Williams - Software Software" />
+    <meta property="og:description" content="I am a fulltime husband, father, software engineer and weight-lifting entusiasts. I enjoy staying update to date with current techonologies by reading and taking certification classes." />
+    <meta property="og:image" content="http://raphaelcruzeiro.com/static/img/thumb.png" />
+
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/feeds/rss/">
+        <link rel="alternate" type="application/atom+xml" title="Atom" href="/blog/feeds/atom/">
+    
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen" />
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/libs/fancyBox/jquery.fancybox.css?v=2.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/libs/fancyBox/helpers/jquery.fancybox-buttons.css?v=2.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/libs/fancyBox/helpers/jquery.fancybox-thumbs.css?v=2.0.5" type="text/css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/syntaxhighlighter/shCoreDefault.css"/>
+    
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19025964-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+</head>
+<body>
+<div id="fb-root"></div>
+<div id="container">
+    <div id="top-nav">
+        <div id="top-nav-contaner">
+            <ul>
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about/">Resume</a></li>
+    
+    <li><a href="/weblog/">Family Blog</a></li>
+    
+    <li><a href="#" class="aContact">Contact</a></li>
+</ul>
+
+        </div>
+    </div>
+    <div class="heading">
+        <span>My name is</span>
+        <h1><a href="/">David Williams</a></h1>
+        <span id="andima">and I'm a</span>
+        <h2>Husband, Father and Software engineer</h2>
+    </div>
+    
+<div id="main">
+    <div id="content">
+    <div id="animation"><img src="{{ STATIC_URL }}img/animation-imgs/hurley.jpg" width="450" height="425" /> </div><!--<img src="{{ STATIC_URL }}img/loader64.gif" alt="Loading..." class="loader" /></div-->
+    <p>I am a fulltime husband, father, software engineer and weight-lifting entusiasts. I enjoy staying update to date with current techonologies by reading and taking certification classes.</p>
+<p>I have been fascinated by and working on and computers for as long as I can remember. I decided I wanted to be a software engineer after my father took me to the AirShow on Andrews Air Force Base when I was young and a pilot of theThunderbirds informed me he was a computer engineer. From then on I knew, from my passion for technology and my love for Thunderbirds.</p>
+<p>When not taking care of my family or working, I enjoy lifting weights. I have a picture when I was around 5 of my face on Ronnie Coleman's body. My older cousin Matthew and I decided we were going to lift weights and be big and strong, which shows in most pictures of me when I was younger, I always had a muscle shirt or a sleeveless shirt to show my biceps(or lack there of). Now I am 164lbs, technically obese for my height, eventhough I am 12% bodyfat. I workout 5 days a week and enjoy motivating others to get in the gym or eat right to ensure they are healthy. One of my biggest motivators is my cousin Matthew(R.I.P.) and <a href="http://youtu.be/K65LdneNzF0?t=17">CT Fletcher(Warning NSFW)</a>.  </p>
+<p>More importantly I am a husband and father of 3. My wife Dana, daughter Kalyn(2) and sons Jovan(6) and Elijah(9mos). I try to entertain them as much as possible, I am usually tired after work but I try to let them be kids and enjoy themselves. I won't speak on Dana too much because her blogwill explain everything about her, but to sum her up, imaginge a lawyer/ judge/accountant/CEO/Black Widow(Avengers)/Hilary from Fresh Prince and you know Dana. Jovan loves superheros(Spiderman specifically), playing sports, parkour and anything that can cause brain damage or broken bones. Kalyn is my princess, she loves dolls, painting nails, dancing, singing and watching cartoons. Last but not least, Elijah is the roughest, toughest creature this side of the Atlantic ocean. He crawls, chews, bites, climbs, hits, slams, falls, stands and screams. Anything a spartan does or Vin Diesal needs a stunt double for in Fast and the Furious,HE DOES! </p>
+
+</div>
+    <br style="clear:both;" />
+</div>
+
+</div>
+<div id="bottom-nav">
+    
+<div class="blog-bar">
+    <div class="article-holder">
+        <h2>From the blog:</h2>
+        <div class="article featured">
+            <div class="text">
+                
+        </div>
+        <br style="clear: both;" />
+    </div>
+</div>
+
+    <div id="footer-wrapper">
+        <ul>
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about/">Resume</a></li>
+    
+    <li><a href="/blog/">Blog</a></li>
+    
+    <li><a href="#" class="aContact">Contact</a></li>
+</ul>
+
+        <div id="bottom-right">
+            <ul class="icons">
+                <li><a href="http://raphaelcruzeiro.com/blog/rss" target="_blank"><img src="{{ STATIC_URL }}img/icon-rss-32.png" alt="RSS feed"></a></li>
+                <li><a href="http://facebook.com/raphaelcruzeiro" target="_blank"><img src="{{ STATIC_URL }}img/icon-facebook-32.png" alt="Facebook profile"></a></li>
+                <li><a href="http://twitter.com/rcdeveloper" target="_blank"><img src="{{ STATIC_URL }}img/icon-twitter-32.png" alt="Twitter"></a></li>
+                <li><a href="http://youtube.com/raphaelcruzeiro" target="_blank"><img src="{{ STATIC_URL }}img/icon-youtube-32.png" alt="Youtube channel"></a></li>
+                <li><a href="http://github.com/raphaelcruzeiro" target="_blank"><img src="{{ STATIC_URL }}img/gh_icon.png" alt="Github profile"></a></li>
+            </ul>
+            <a href="http://python.org" id="python-powered" target="_blank"><img alt="Python powered" src="{{ STATIC_URL }}img/python-powered.svg" /></a>
+        </div>
+    </div>
+    
+</div>
+<div id="contact" style="display: none;">
+    <h3>Contact</h3>
+    <form method="post" action="/contact/">
+        
+            <span class="field email">
+                <input id="id_email" type="text" name="email" title="Email*" />
+            </span>
+        
+            <span class="field subject">
+                <input id="id_subject" maxlength="100" type="text" name="subject" title="Subject*" />
+            </span>
+        
+            <span class="field text">
+                <textarea id="id_text" rows="10" cols="40" name="text" title="Message*"></textarea>
+            </span>
+        
+           
+        
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/jquery-1.7.1.min.js"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/fancyBox/jquery.fancybox.pack.js?v=2.0.5"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/fancyBox/helpers/jquery.fancybox-buttons.js?v=2.0.5"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/fancyBox/helpers/jquery.fancybox-thumbs.js?v=2.0.5"></script>
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/core.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/syntaxhighlighter/shBrushJScript.js"></script>
+<script src="{{ STATIC_URL }}js/libs/syntaxhighlighter/shAutoloader.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    SyntaxHighlighter.autoloader(
+            'js jscript javascript {{ STATIC_URL }}js/libs/syntaxhighlighter/brushes/shBrushJScript.js',
+            'cpp c           {{ STATIC_URL }}js/libs/syntaxhighlighter/brushes/shBrushCpp.js',
+            'python            {{ STATIC_URL }}js/libs/syntaxhighlighter/brushes/shBrushPython.js',
+            'java          {{ STATIC_URL }}js/libs/syntaxhighlighter/brushes/shBrushJava.js',
+            'xml            {{ STATIC_URL }}js/libs/syntaxhighlighter/brushes/shBrushXml.js'
+    );
+
+    SyntaxHighlighter.all();
+</script>
+
+<!--<script type="text/javascript" src="{{ STATIC_URL }}js/animation.js"></script>-->
+
+
+</body>
+</html>

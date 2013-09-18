@@ -1,0 +1,149 @@
+a {
+    text-decoration: none;
+}
+
+#bottom-nav {
+    max-height: 150px;
+    min-height: 150px;
+    clear: both;
+}
+
+#wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 1044px;
+    margin: 40px auto;
+}
+
+.filter p {
+    margin: 10px 25px;
+    font-size: 85%;
+    color: #2d2d2d;
+}
+
+#content {
+    width: 752px;
+    float: left;
+    padding: 0 0 30px 0;
+    min-height: 420px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    text-align: left !important;
+}
+
+.post {
+    padding: 0 30px 0 0;
+    margin: 20px;
+    color: #000000 !important;
+    font-size: 84%;
+    line-height: 25px;
+}
+
+.post h1, .post h1 a {
+    font-size: 28px !important;
+    margin: 30px 0 10px 0 !important;
+    font-weight: normal !important;
+    line-height: 32px !important;
+}
+
+.post a {
+    text-decoration: none !important;
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.post a:hover {
+    color: #e12000 !important;
+}
+
+.post small {
+    font-size: 11px;
+}
+
+.post p {
+    margin: 14px 0 0 0;
+}
+
+.post li {
+    margin: 0;
+    line-height: 15px;
+}
+
+.post .aligncenter {
+    margin: 0 auto;
+    display: block;
+}
+
+.post ul {
+    list-style: circle;
+    margin: 0 0 0 25px;
+}
+
+.pagination {
+    margin: 20px;
+}
+
+.pagination .disabled a {
+    margin: 0 20px 0 0;
+}
+
+.pagination .prev a {
+    margin: 0;
+}
+
+.pagination ul li {
+    display: inline;
+}
+
+#sidebar {
+    width: 250px;
+    float: right;
+    margin: 0 0 25px 0;
+    overflow: hidden;
+    background-color: #CE4213;
+    border-radius: 10px;
+    color: white;
+}
+
+#sidebar .block {
+    margin: 10px;
+}
+
+#sidebar .block ul li {
+    border-top: 1px dotted #ccc;
+    line-height: 18px;
+}
+
+#sidebar .widget_text h3, #sidebar .calendar h3 {
+    border-bottom: 1px dotted #ccc;
+}
+
+#sidebar h3 {
+    padding: 25px 0 3px 0;
+    font-size: 18px;
+}
+
+#sidebar h6 {
+    margin: 5px;
+}
+
+#sidebar .block li a {
+    background: transparent url(/static/img/bullet_black.gif) no-repeat scroll -1px 52%;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 2px 0 2px 15px;
+    display: block;
+    border-bottom: none;
+    color: #ccc;
+}
+
+#sidebar .block li a:hover {
+    background: #DE5223 url(/static/img/bullet_red.gif) no-repeat scroll 6px 52%;
+    color: white;
+}
+
+#sidebar a {
+    color: #ccc;
+}

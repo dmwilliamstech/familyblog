@@ -1,0 +1,8 @@
+<article>
+    <hgroup>
+        <h1><a href="{{ entry.get_absolute_url }}">{{ entry.title|safe }}</a></h1>
+        <h2>by {% with entry.author.user as user %}{% include "django_blog/_author_name.html" %}{% endwith %}</h2>
+    </hgroup>
+    {{ entry.body|safe|truncatewords_html:80 }}
+    <p><a href="{{ entry.get_absolute_url }}">Keep reading&#8230;</a></p>
+</article>

@@ -1,0 +1,7 @@
+<ul>
+    <li><a href="/">Home</a></li>
+    {% for page in page_branch %}
+    <li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    <li><a href="#" class="aContact">Contact</a></li>
+</ul>

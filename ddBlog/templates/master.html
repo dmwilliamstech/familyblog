@@ -1,0 +1,106 @@
+{% load pages_tags mezzanine_tags i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+    <meta property="fb:admins" content="100000999724968"/>
+    <meta property="og:title" content="Raphael Cruzeiro - Software developer" />
+    <meta property="og:description" content="I am a generalist programmer, working from web development to iOS programming and desktop applications. I also consider myself to have an eye for interface design and product usability." />
+    <meta property="og:image" content="http://raphaelcruzeiro.com/static/img/thumb.png" />
+
+    {% ifinstalled mezzanine.blog %}
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url blog_post_feed "rss" %}">
+        <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url blog_post_feed "atom" %}">
+    {% endifinstalled %}
+
+    <link rel="stylesheet" href="/static/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen" />
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/static/js/libs/fancyBox/jquery.fancybox.css?v=2.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/js/libs/fancyBox/helpers/jquery.fancybox-buttons.css?v=2.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/js/libs/fancyBox/helpers/jquery.fancybox-thumbs.css?v=2.0.5" type="text/css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="/static/css/syntaxhighlighter/shCoreDefault.css"/>
+    {% block extra_css %}{% endblock %}
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19025964-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+<div id="fb-root"></div>
+<div id="container">
+    <div id="top-nav">
+    </div>
+    <div class="heading">
+        <span>My name is</span>
+        <h1><a href="/">Raphael Cruzeiro</a></h1>
+        <span id="andima">and I'm a</span>
+        <h2>Software developer</h2>
+    </div>
+    {% block main %}{% endblock %}
+</div>
+<div id="bottom-nav">
+    {% block bottom %}{% endblock %}
+    <div id="footer-wrapper">
+        {% page_menu 'blocks/menu.html' %}
+        <div id="bottom-right">
+            <ul class="icons">
+                <li><a href="http://raphaelcruzeiro.com/blog/rss" target="_blank"><img src="/static/img/icon-rss-32.png" alt="RSS feed"></a></li>
+                <li><a href="http://facebook.com/raphaelcruzeiro" target="_blank"><img src="/static/img/icon-facebook-32.png" alt="Facebook profile"></a></li>
+                <li><a href="http://twitter.com/rcdeveloper" target="_blank"><img src="/static/img/icon-twitter-32.png" alt="Twitter"></a></li>
+                <li><a href="http://youtube.com/raphaelcruzeiro" target="_blank"><img src="/static/img/icon-youtube-32.png" alt="Youtube channel"></a></li>
+                <li><a href="http://github.com/raphaelcruzeiro" target="_blank"><img src="/static/img/gh_icon.png" alt="Github profile"></a></li>
+            </ul>
+            <a href="http://python.org" id="python-powered" target="_blank"><img alt="Python powered" src="/static/img/python-powered.svg" /></a>
+        </div>
+    </div>
+    <div id="copyright">{{ year }} - Raphael Cruzeiro. Some rights reserved. This website is <a href="https://github.com/raphaelcruzeiro/My-website" target="_blank">open source software</a>.</div>
+</div>
+<div id="contact" style="display: none;">
+    <h3>Contact</h3>
+    <form method="post" action="/contact/">
+        {% for field in contact_form %}
+            <span class="field {{ field.name}}">
+                {{ field }}
+            </span>
+        {% endfor %}
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script type="text/javascript" src="/static/js/libs/jquery-1.7.1.min.js"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="/static/js/libs/fancyBox/jquery.fancybox.pack.js?v=2.0.5"></script>
+<script type="text/javascript" src="/static/js/libs/fancyBox/helpers/jquery.fancybox-buttons.js?v=2.0.5"></script>
+<script type="text/javascript" src="/static/js/libs/fancyBox/helpers/jquery.fancybox-thumbs.js?v=2.0.5"></script>
+
+<script type="text/javascript" src="/static/js/core.js"></script>
+<script type="text/javascript" src="/static/js/libs/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="/static/js/libs/syntaxhighlighter/shBrushJScript.js"></script>
+<script src="/static/js/libs/syntaxhighlighter/shAutoloader.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    SyntaxHighlighter.autoloader(
+            'js jscript javascript  /static/js/libs/syntaxhighlighter/brushes/shBrushJScript.js',
+            'cpp c           /static/js/libs/syntaxhighlighter/brushes/shBrushCpp.js',
+            'python            /static/js/libs/syntaxhighlighter/brushes/shBrushPython.js',
+            'java            /static/js/libs/syntaxhighlighter/brushes/shBrushJava.js',
+            'xml            /static/js/libs/syntaxhighlighter/brushes/shBrushXml.js'
+    );
+
+    SyntaxHighlighter.all();
+</script>
+{% block extra_js %}{% endblock %}
+
+</body>
+</html>

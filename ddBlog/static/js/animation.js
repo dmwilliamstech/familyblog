@@ -1,0 +1,88 @@
+
+var animation = (function(){
+
+    var container = null;
+    var imgList = null;
+    var loadedImgs = 0;
+    var currentImg = null;
+
+    return {
+        init: function(sel, imgs){
+            container = $(sel);
+            imgList = imgs;
+
+            for(var i = 0; i < imgList.length; i++) {
+                var thumb = imgList[i].split('.')[0] + 't.' + imgList[i].split('.')[1];
+                var img = $('<a class="thumb-item" rel="thumb-item" href="' + imgList[i] + '" style="display:none;"><img alt="" src="' + thumb + '"  /></a>');
+                container.append(img);
+                img.find('img').load(function(){
+                    loadedImgs++;
+
+                    if(loadedImgs == imgList.length) {
+                        $(container.find('.loader')).remove();
+
+                        currentImg = $(container.find('a')[0]);
+                        currentImg.fadeIn(3000);
+
+                        setTimeout(function(){
+                            setTimeout(animation.refresh, 3000);
+                        }, 3000);
+                    }
+                });
+            }
+            $(".thumb-item").fancybox({
+                prevEffect	: 'none',
+                nextEffect	: 'none',
+                helpers	: {
+                    title	: {
+                        type: 'outside'
+                    },
+                    overlay	: {
+                        opacity : 0.8,
+                        css : {
+                            'background-color' : '#000'
+                        }
+                    },
+                    thumbs	: {
+                        width	: 50,
+                        height	: 50
+                    }
+                }
+            });
+        },
+
+        refresh: function(){
+            var oldImg = currentImg;
+            currentImg = $(oldImg.next());
+
+            if(!currentImg.length) {
+                currentImg = $(container.find('a')[0]);
+            }
+
+            currentImg.css('z-index', 2);
+
+            currentImg.fadeIn(3000, function(){
+                oldImg.hide();
+                currentImg.css('z-index', 1);
+                setTimeout(animation.refresh, 3000);
+            });
+        }
+    }
+})()
+
+$(document).ready(function(){
+    animation.init('#animation', [
+        '/static/img/animation-imgs/kd.jpg',
+        //'static/img/animation-imgs/jk.jpg',
+        /*'static/img/animation-imgs/hurley.jpg',
+        'static/img/animation-imgs/kcu.jpg',
+        'static/img/animation-imgs/dj_school.jpg'
+	'static/img/animation-imgs/elijah_carseat.jpg',
+	'static/img/animation-imgs/kd.jpg',
+	'static/img/animation-imgs/wedding_pic.jpg',
+	'static/img/animation-imgs/krispykreme.jpg',
+	'static/img/animation-imgs/kalyn_carseat.jpg',
+	'static/img/animation-imgs/kalyn_cold.jpg'*/
+
+    ]);
+});

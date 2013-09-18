@@ -1,0 +1,36 @@
+{% extends "master.html" %}
+{% load wordpress_url %}
+
+{% block main %}
+<div id="main">
+    <div id="content">{% block content %}{% endblock %}</div>
+    <br style="clear:both;" />
+</div>
+{% endblock %}
+
+{% block bottom %}
+<div class="blog-bar">
+    <div class="article-holder">
+        <h2>From the blog:</h2>
+        <div class="article featured">
+            <div class="text">
+                <h3><a href="{{ featured|get_post_url }}">{{ featured.title }}</a></h3>
+                <span class="date">{{ featured.date }}</span>
+                {{ featured.description }}
+                <a class="more" href="{{ featured|get_post_url }}">Read more...</a>
+            </div>
+        </div>
+        <div class="article list">
+            <ul>
+                {% for post in posts %}
+                <li>
+                    <a href="{{ post|get_post_url }}">{{ post.title }}</a>
+                    <span class="date">{{ post.date }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <br style="clear: both;" />
+    </div>
+</div>
+{% endblock %}
